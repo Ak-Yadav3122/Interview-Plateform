@@ -2,7 +2,6 @@ import { useUser } from "@clerk/nextjs";
 import { useStreamVideoClient } from "@stream-io/video-react-sdk";
 import { useMutation, useQuery } from "convex/react";
 import { useState } from "react";
-import { api } from "../../../../convex/_generated/api";
 import toast from "react-hot-toast";
 import {
   Dialog,
@@ -26,6 +25,9 @@ import { Loader2Icon, XIcon } from "lucide-react";
 import { TIME_SLOTS } from "@/constants";
 import MeetingCard from "@/components/MeetingCard";
 import { Calendar } from "@/components/ui/calendar";
+import { api } from "../../../../convex/_generated/api";
+
+
 
 function InterviewScheduleUI() {
   const client = useStreamVideoClient();
@@ -289,6 +291,7 @@ function InterviewScheduleUI() {
       </div>
 
       {/* LOADING STATE & MEETING CARDS */}
+
       {!interviews ? (
         <div className="flex justify-center py-12">
           <Loader2Icon className="size-8 animate-spin text-muted-foreground" />
@@ -296,7 +299,7 @@ function InterviewScheduleUI() {
       ) : interviews.length > 0 ? (
         <div className="spacey-4">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {interviews.map((interview) => (
+             {interviews.map((interview) => (
               <MeetingCard key={interview._id} interview={interview} />
             ))}
           </div>
