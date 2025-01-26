@@ -1,6 +1,7 @@
 // "use client"
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import "@stream-io/video-react-sdk/dist/css/styles.css";   
 import "./globals.css";
 import {
   ClerkProvider,
