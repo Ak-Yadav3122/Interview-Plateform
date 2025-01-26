@@ -26,7 +26,7 @@ const useMeetingActions = () => {
       toast.success("Meeting Created");
     } catch (error) {
       console.error(error);
-      toast.error("Failed to create meeting");
+      toast.error("Failed to create your meeting");
     }
   };
 
