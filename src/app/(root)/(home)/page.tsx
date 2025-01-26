@@ -7,13 +7,11 @@ import { useQuery } from "convex/react";
 import { useState } from "react";
 import { api } from "../../../../convex/_generated/api";
 import { useRouter } from "next/navigation";
-// import MeetingModa from "@/components/MeetingModal";
-// import LoaderUI from "@/components/LoaderUI";
 import { Loader2Icon } from "lucide-react";
 import LoaderUI from "@/components/LoaderUI";
 import MeetingModal from "@/components/MeetingModal";
 import MeetingCard from "@/components/MeetingCard";
-// import MeetingCard from "@/components/MeetingCard";
+ 
 
 export default function Home() {
   const router = useRouter();
@@ -23,7 +21,7 @@ export default function Home() {
   const [showModal, setShowModal] = useState(false);
   const [modalType, setModalType] = useState<"start" | "join">();
 
-  const handleQuickAction = (title: string) => {
+  const handleQuickAction= (title: string) => {
     switch (title) {
       case "New Call":
         setModalType("start");
