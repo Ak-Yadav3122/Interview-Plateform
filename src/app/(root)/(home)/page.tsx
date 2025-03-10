@@ -11,7 +11,6 @@ import { Loader2Icon } from "lucide-react";
 import LoaderUI from "@/components/LoaderUI";
 import MeetingModal from "@/components/MeetingModal";
 import MeetingCard from "@/components/MeetingCard";
- 
 
 export default function Home() {
   const router = useRouter();
@@ -21,7 +20,7 @@ export default function Home() {
   const [showModal, setShowModal] = useState(false);
   const [modalType, setModalType] = useState<"start" | "join">();
 
-  const handleQuickAction= (title: string) => {
+  const handleQuickAction = (title: string) => {
     switch (title) {
       case "New Call":
         setModalType("start");
@@ -75,7 +74,9 @@ export default function Home() {
         <>
           <div>
             <h1 className="text-3xl font-bold">Your Interviews</h1>
-            <p className="text-muted-foreground mt-1">View and join your scheduled interviews</p>
+            <p className="text-muted-foreground mt-1">
+              View and join your scheduled interviews
+            </p>
           </div>
 
           <div className="mt-8">
