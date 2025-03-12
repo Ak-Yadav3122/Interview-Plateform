@@ -102,7 +102,7 @@ function InterviewScheduleUI() {
       });
     } catch (error) {
       console.error(error);
-      toast.error("Failed to schedule meeting. Please try again.");
+      toast.error("Failed to schedule your meeting. Please try again later.");
     } finally {
       setIsCreating(false);
     }
