@@ -51,7 +51,7 @@ function RecordingsPage() {
           </div>
         ) : (
           <div className="flex flex-col items-center justify-center h-[400px] gap-4">
-            <p className="text-xl font-medium text-muted-foreground">No recordings available</p>
+            <p className="text-xl font-medium text-muted-foreground">No recordings are available</p>
           </div>
         )}
       </ScrollArea>
