@@ -143,7 +143,7 @@ function CommentDialog({ interviewId }: { interviewId: Id<"interviews"> }) {
               <Textarea
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
-                placeholder="Share your detailed comment about the candidate..."
+                placeholder="Share your comment about the candidate..."
                 className="h-32"
               />
             </div>
