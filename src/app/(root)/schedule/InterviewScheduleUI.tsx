@@ -90,7 +90,7 @@ function InterviewScheduleUI() {
       });
 
       setOpen(false);
-      toast.success("Meeting scheduled successfully!");
+      toast.success("Your Meeting scheduled successfully!");
 
       setFormData({
         title: "",
