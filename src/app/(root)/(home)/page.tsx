@@ -75,7 +75,7 @@ export default function Home() {
           <div>
             <h1 className="text-3xl font-bold">Your Interviews</h1>
             <p className="text-muted-foreground mt-1">
-              View and join your scheduled interviews
+              View and join your scheduled interviews.
             </p>
           </div>
 
@@ -92,7 +92,7 @@ export default function Home() {
               </div>
             ) : (
               <div className="text-center py-12 text-muted-foreground">
-                You have no any scheduled interviews at the moment
+                You have no scheduled interviews at the moment
               </div>
             )}
           </div>
