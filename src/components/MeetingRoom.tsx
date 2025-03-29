@@ -43,8 +43,6 @@ function MeetingRoom() {
           {/* VIDEO LAYOUT */}
           <div className="absolute inset-0">
             {layout === "grid" ? <PaginatedGridLayout /> : <SpeakerLayout />}
-
-            {/* PARTICIPANTS LIST OVERLAY */}
             {showParticipants && (
               <div className="absolute right-0 top-0 h-full w-[300px] bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
                 <CallParticipantsList onClose={() => setShowParticipants(false)} />
