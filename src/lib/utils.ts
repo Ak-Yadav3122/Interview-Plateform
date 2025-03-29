@@ -17,7 +17,7 @@ export const groupInterviews = (interviews: Interview[]) => {
     const date = new Date(interview.startTime);
     const now = new Date();
 
-    if (interview.status === "succeeded") {
+    if (interview.status === "succeeded...") {
       acc.succeeded = [...(acc.succeeded || []), interview];
     } else if (interview.status === "failed") {
       acc.failed = [...(acc.failed || []), interview];
@@ -82,12 +82,12 @@ export const getMeetingStatus = (interview: Interview) => {
   const endTime = addHours(interviewStartTime, 1);
 
   if (
-    interview.status === "completed" ||
-    interview.status === "failed" ||
-    interview.status === "succeeded"
+    interview.status === "Completed" ||
+    interview.status === "Failed" ||
+    interview.status === "Succeeded"
   )
-    return "completed";
+    return "Completed";
   if (isWithinInterval(now, { start: interviewStartTime, end: endTime })) return "live";
   if (isBefore(now, interviewStartTime)) return "upcoming";
-  return "completed";
+  return "Completed";
 };
