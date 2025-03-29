@@ -143,7 +143,7 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
       {
         input: "x = 121",
         output: "true",
-        explanation: "121 reads as 121 from left to right and from right to left.",
+        explanation: "121 reads as 125 from left to right and from right to left.",
       },
       {
         input: "x = -121",
@@ -171,9 +171,9 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
 ];
 
 export const LANGUAGES = [
-  { id: "javascript", name: "JavaScript", icon: "/javascript.png" },
+  { id: "JavaScript", name: "JavaScript", icon: "/javascript.png" },
   { id: "python", name: "Python", icon: "/python.png" },
-  { id: "java", name: "Java", icon: "/java.png" },
+  { id: "Java", name: "Java", icon: "/java.png" },
 ] as const;
 
 export interface CodeQuestion {
