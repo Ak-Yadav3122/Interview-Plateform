@@ -40,7 +40,7 @@ function CodeEditor() {
                     </h2>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Choose your language and solve the coding problem
+                    Choose your language and solve your coding problem
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
