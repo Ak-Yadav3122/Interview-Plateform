@@ -17,7 +17,7 @@ export const groupInterviews = (interviews: Interview[]) => {
     const date = new Date(interview.startTime);
     const now = new Date();
 
-    if (interview.status === "succeeded...") {
+    if (interview.status === "succeeded") {
       acc.succeeded = [...(acc.succeeded || []), interview];
     } else if (interview.status === "failed") {
       acc.failed = [...(acc.failed || []), interview];
