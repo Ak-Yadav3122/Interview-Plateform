@@ -82,7 +82,7 @@ function CommentDialog({ interviewId }: { interviewId: Id<"interviews"> }) {
           {existingComments.length > 0 && (
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <h4 className="text-sm font-medium">Previous Comments</h4>
+                <h4 className="text-sm font-medium">Previous Comments...</h4>
                 <Badge variant="outline">
                   {existingComments.length} Comment{existingComments.length !== 1 ? "s" : ""}
                 </Badge>
@@ -122,7 +122,7 @@ function CommentDialog({ interviewId }: { interviewId: Id<"interviews"> }) {
           <div className="space-y-4">
             {/* RATING */}
             <div className="space-y-2">
-              <Label>Rating</Label>
+              <Label>Ratings</Label>
               <Select value={rating} onValueChange={setRating}>
                 <SelectTrigger>
                   <SelectValue placeholder="Select rating" />
@@ -139,7 +139,7 @@ function CommentDialog({ interviewId }: { interviewId: Id<"interviews"> }) {
 
             {/* COMMENT */}
             <div className="space-y-2">
-              <Label>Your Comment</Label>
+              <Label>Your Comments</Label>
               <Textarea
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
