@@ -8,7 +8,6 @@ const convex = new ConvexReactClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
 
 function ConvexClerkProvider({ children }: { children: React.ReactNode }) {
   return (
-    //provider for clerk and convex
 
     <ClerkProvider
       publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
