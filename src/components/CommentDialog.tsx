@@ -65,7 +65,6 @@ function CommentDialog({ interviewId }: { interviewId: Id<"interviews"> }) {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      {/* TRIGGER BUTTON */}
       <DialogTrigger asChild>
         <Button variant="secondary" className="w-full">
           <MessageSquareIcon className="h-4 w-4 mr-2" />
@@ -75,7 +74,7 @@ function CommentDialog({ interviewId }: { interviewId: Id<"interviews"> }) {
 
       <DialogContent className="sm:max-w-[600px]">
         <DialogHeader>
-          <DialogTitle>Interview Comment</DialogTitle>
+          <DialogTitle>Interview Comments</DialogTitle>
         </DialogHeader>
 
         <div className="space-y-6">
@@ -88,7 +87,6 @@ function CommentDialog({ interviewId }: { interviewId: Id<"interviews"> }) {
                 </Badge>
               </div>
 
-              {/* DISPLAY EXISTING COMMENTS */}
               <ScrollArea className="h-[240px]">
                 <div className="space-y-4">
                   {existingComments.map((comment, index) => {
@@ -120,7 +118,6 @@ function CommentDialog({ interviewId }: { interviewId: Id<"interviews"> }) {
           )}
 
           <div className="space-y-4">
-            {/* RATING */}
             <div className="space-y-2">
               <Label>Ratings</Label>
               <Select value={rating} onValueChange={setRating}>
@@ -137,7 +134,6 @@ function CommentDialog({ interviewId }: { interviewId: Id<"interviews"> }) {
               </Select>
             </div>
 
-            {/* COMMENT */}
             <div className="space-y-2">
               <Label>Your Comments</Label>
               <Textarea
@@ -150,7 +146,6 @@ function CommentDialog({ interviewId }: { interviewId: Id<"interviews"> }) {
           </div>
         </div>
 
-        {/* BUTTONS */}
         <DialogFooter>
           <Button variant="outline" onClick={() => setIsOpen(false)}>
             Cancel
