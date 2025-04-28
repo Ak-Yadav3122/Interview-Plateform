@@ -152,7 +152,7 @@ function MeetingCard({ interview }: { interview: Interview }) {
 
         {status === "upcoming" && (
           <Button variant="outline" className="w-full" disabled>
-            Waiting to Start
+            Waiting to Start...
           </Button>
         )}
       </CardContent>
